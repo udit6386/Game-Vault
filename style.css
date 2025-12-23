@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  body {
+    background: #0f172a;
+    color: #e5e7eb;
+  }
+  .top-header {
+    display: flex;
+    align-items: center;
+    background-color: blue;
+  }
+  
+  .home-btn {
+    margin-right: 30%;   /* 👈 pushes everything else to the right */
+    color: #000000;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  .link {
+    color: #000000;
+    text-decoration: none;
+    font-size: larger;
+    margin-left: 10px;
+    background-color: yellow;
+  }
+  .logo {
+    font-size: 30px;
+
+  }
+  
+  
+  .home-btn:hover {
+    color: #22c55e;
+  }
+  
+  /* Header */
+  header {
+    padding: 20px;
+    text-align: center;
+    background: #020617;
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+    color: #22c55e;
+  }
+  
+  header input {
+    margin-top: 15px;
+    padding: 10px;
+    width: 60%;
+    max-width: 400px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+  }
+  
+  /* Games Section */
+  .games {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 20px;
+    padding: 30px;
+  }
+  
+  .game-card {
+    background: rgb(0, 0, 0);
+    border-radius: 15px;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s;
+    height: 50%;
+  }
+  
+  .game-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .game-card img {
+    width: 30%;
+    border-radius: 10px;
+    height: 30%;
+  }
+  
+  .game-card h3 {
+    margin: 10px 0;
+    font-size: large;
+  } 
+  .game-card a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: #22c55e;
+    color: #020617;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: large;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 15px;
+    background: #020617;
+    margin-top: 2%;
+    font-size: 0.9rem;
+  }
+  .intro {
+    max-width: 900px;
+    margin: 30px auto;
+    text-align: center;
+    padding: 0 20px;
+  }
+  
+  .intro h2 {
+    color: #22c55e;
+    margin-bottom: 10px;
+  }
+  
+  .intro p {
+    color: #cbd5f5;
+    line-height: 1.7;
+  }
+  .game-row {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding: 10px 20px 20px;
+    scroll-behavior: smooth;
+  }
+  
+  .game-row::-webkit-scrollbar {
+    height: 6px;
+  }
+  
+  .game-row::-webkit-scrollbar-thumb {
+    background: #22c55e;
+    border-radius: 10px;
+  }
+  
